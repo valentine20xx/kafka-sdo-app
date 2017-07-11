@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://test.ru" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://test.ru">
+
+    <xsd:complexType name="TestType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="surname" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="listOfPassport">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="passport" minOccurs="0" maxOccurs="unbounded" type="tns:Passport"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Passport">
+        <xsd:sequence>
+            <xsd:element name="id" minOccurs="0" type="xsd:int"/>
+            <xsd:element name="number" minOccurs="0" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

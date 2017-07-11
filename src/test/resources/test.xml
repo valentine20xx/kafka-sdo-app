@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:Test xmlns:ns0="http://test.ru" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns0:TestType">
+    <name>name</name>
+    <surname>surname</surname>
+    <listOfPassport>
+        <passport>
+            <id>1</id>
+            <number>123</number>
+        </passport>
+        <passport>
+            <id>2</id>
+            <number>234</number>
+        </passport>
+    </listOfPassport>
+</ns0:Test>
